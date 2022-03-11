@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="introduction.css">
+</head>
+<body>
+      
+    <div class="plove">
+        <a href="index.html"> 
+          <img class="logo_cpu_in_the_top" src="image_simulator/cpu_icon_introduction.png" alt="">
+        </a>
+         <H4 class="title_cpu_style"> CENTRAL PROCESSING UNIT</H4>
+     </div>
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="introduction.html">INTRODUCTION</a></li>
+          <li><a class="menu__item" href="computer.html">Computer as General purpose machaine</a></li>
+          <li><a class="menu__item" href="computer_calculation.html">Computer perform simple Calculator</a></li>
+          <li><a class="menu__item"  href="the_von_architecture.html">The Von neumann Model </a></li>
+          <li><a class="menu__item" href="fetch_decode_execute.html">The Cpu fetch/Decode/Execute/</a></li>
+          <li><a class="menu__item" href="assembly.html">Assembly and High level Language</a></li>
+          <li><a class="menu__item" href="instruction_set.html"> The CPU Insctruction Set</a> </li>
+          <li><a class="menu__item" href="from_the_high_level_to_machine_language.html"> From The High Level To Machine Language</a> </li>
+          <li><a class="menu__item" href="exercises.html">Exercises</a></li>
+          </ul>
+      </div>
+      <div class="title_page">
+            <h2 style="background-color: white; color: black; border-radius: 5px;">The Von Neumann Architecture</h2>
+      </div>
+      <div class="page1_text">
+           <div class="paraf_the_von_arch"> 
+              <p>
+                 The Von Neumann’s architecture, or Von Neumann’s machine, refers to the generic computer architecture
+                 illustrated in the picture on the right.
+                 This architecture is based on the stored-program computer concept, where instructions and data are stored
+                 in the same (primary or main) memory.  This design, first published by the Hungarian mathematician John Von Neumann in 1945,
+                 is still used in most computers produced today, with minor variations. 
+             </p>
+          </div>
+        
+          <div class="image_the_arch_V_N">
+               <img src="image_simulator/von_neuman_architecture1.png" alt="">
+          </div>
+          <div class="component_cpu">
+                <div class="text_component">
+                    <p>
+                        This model has 5 essential components, as illustrated in the equivalent schema on the right:​​ <br>
+                       The Central Processing Unit (CPU); 
+                       The (primary or main) memory; 
+                       Input and Output devices;
+                    The data, address, and control buses.
+                    </p>
+                </div>
+                <div class="image_component_cpu">
+                    <img src="image_simulator/InputOutput_component.png" alt="">
+                </div>
+          </div>
+
+          <div class="Section_arch_cpu">
+              <h4>Central Processing Unit  (CPU)</h4>
+              <div class="arch_cpu">
+                     <p class="text_arch_cpu">
+
+                        The Central Processing Unit (or processor), illustrated in the picture on the right,  is the core element of this model.
+                         It is the hearth of a computer and is responsible for
+                         the execution of every computer instruction. It is constituted by the following main elements:.
+                        The Arithmetic Logic Unit (ALU) performs all the arithmetic (such as additions, multiplications, and comparisons) and logic (such as AND, OR, NOT) operations.  
+                        
+                        The Control Unit and Decoder decode every single instruction, and provide the timing and control signals required by the other components
+                         (within as well as externally to the CPU), to orchestrate the necessary operations. 
+                        
+                        A variety of specialized Registers, which are very high-speed temporary storage areas within the CPU:
+                        
+                        The Accumulator (Acc) is used to store the results produced by the ALU.
+                        
+                        The Program Counter (PC) contains the address of the instruction in memory that will have to be executed next. It is automatically
+                         incremented in order to implement a sequential execution of the instructions contained in the memory.
+                        
+                        The Instruction Register (IR) contains the instruction that the CPU is currently executing, fetched from the memory.
+                        
+                        The Status Word (SW) contains a set of flags (boolean values) reflecting properties of the results of the ALU calculations. For example, the Z flag is true if the result is zero, 
+                        the N flag is true if the result is negative. These flags are exploited by the control instructions, that can alter the otherwise sequential execution of the instructions in memory.
+                        
+                        The Multiplexer (MUX) ​is a multi-way switch that determines the input for the ALU.
+                     </p>
+              </div>
+              <div class="image_arch_cpu">
+                       <img src="image_simulator/image_arch_cpu.jpg" alt="">
+              </div>
+          </div>
+          <div class="input_output_device">
+               <div class="text_input_output_device">
+                   <h4> I/O Devices </h4>
+                    <p class="paraf_memory">
+                        The Input/Output devices, controlled and coordinated by the processor, enable the interaction between the computer and its external environment, including the users.
+                        Input devices: allow the introduction of data (including instructions) to the system. For example, a keyboard, a mouse, or a temperature sensor.  
+                        Output devices are necessary to communicate the processed data to the external world. For example, a monitor, or the controller of a water pump to irrigate a garden.
+                        Some peripheral units can act as both input and output devices; for example a modem, a touch screen, or an SSD device. 
+                        BUS <br> 
+                       The bus is a shared communication channel interconnecting the different components of the architecture, permitting the transfer of the necessary information, according to the operation to be performed.
+                        The bus can be subdivided in three components:
+                    </p>
+               </div>
+               <div class="image_input_ouput_devices">
+                    <img class="image_simulator_in_gif" src="image_simulator/image_input_output.jpg" alt="">
+               </div>
+
+               <li class="bus_desc">Data Bus: transfers the data to be read or written, from/to memory or I/O devices. For example the content of a memory cell.</li>
+               <li class="bus_desc">Address Bus: transfers the addresses of the memory (or I/O devices) involved in an operation. For example the address of the memory cell involved in a Read operation.</li>
+               <li class="bus_desc">Control Bus: transfers the control signals to coordinate the operations of the subcomponents involved in an operation. For example signalling a Read versus a Write operation in memory.</li>
+          </div>
+          <div class="section_memory">
+              <h4>Memory</h4>
+              <div class="text_memory">
+                  
+                  <p class="paraf_memory">
+                    Another fundamental component in the Von Neumann model is the memory, where both data and instructions are stored. This type of memory is called Primary or Main Memory.
+                    This memory can be conceptually considered as a set of locations (cells), each of them being able to memorize some information, such as an instruction (or part of it) or elementary data.
+                     These cell are depicted in gray in the picture on the right, and in this case they all contain the code corresponding to the computer instruction NOP (No Operation). A unique address is associated with each location 
+                     (the yellow column in the same picture), so that the CPU can address them.
+                    In modern computers, most of this main memory is usually implemented as Random Access Memory (RAM). This is a fast but volatile memory used by the CPU to read and store data and instructions. Part of this memory can also
+                     be implemented as Read Only Memory (ROM), which is a permanent memory as fast as the RAM. The ROM usually contains a relatively few instructions to test the proper functioning of the hardware and "boot" the computer.
+                    Most computers make also use of an additional type of memory, called secondary memory. This may be implemented as an hard disk or an SSD device - which are considered in the Von Neumann architecture as I/O devices.
+                     This is a much slower memory but it is persistent and usually has a larger storage capacity. Because of its insufficient speed, it is not used directly by the CPU, but it is used to permanently store data and programs which are loaded in the main memory as needed.
+                  </p>
+                  <div class="image_memory">
+                    <img src="image_simulator/image_ram.jpg" alt="">
+                </div>
+              </div>
+              
+          </div>
+
+      </div>
+        <!--    THE TWOO ARROW BUTTON  ON THE BOTTOM OF THE PAGE  -->
+        <div class="arrow ">
+            <a href="computer_calculation.html">
+               <div class="arrow_right">
+                 <img class="arrow" src="image_simulator/arrow_droite.png" alt="">
+               </div>
+             </a>
+             <a href="fetch_decode_execute.html">
+             <div class="arrow_left">
+                 <img class="arrow" src="image_simulator/arrow_gauche.png" alt="">
+             </div>
+              </a>    
+           </div>
+</body>
+</html>

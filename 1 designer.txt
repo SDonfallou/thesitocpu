@@ -1,0 +1,82 @@
+
+
+-----------------------------<HTML>-------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <span id="title">
+        <h1 class="title_principale">CPU</h1><br>
+        <h4 class="title_principale">Struction And Fonctionnment of CPU</h4>
+
+    </span>
+    
+   </div>
+
+   <nav>
+       
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            
+          </ul>
+       
+       
+   </nav>
+      <div id="image_center_cpu">
+          <img src="image_simulator/cupimage.jpg" alt="">
+      </div>
+
+</body>
+</html>
+
+
+
+
+--------------------------------------------------->CSS<---------------------------------------------
+body {
+  background-color: black;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url(image_simulator/cupimage.jpg);
+}
+#title {
+  text-align: center;
+}
+.title_principale {
+  margin: 0;
+}
+
+/* navigation bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 15px;
+}
+
+li:hover {
+  background-color: #362222;
+  color: #f4cca4;
+}
+#image_center_cpu{
+    
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="introduction.css">
+</head>
+<body>   
+        <div class="plove">
+          <a href="indexnew.css">
+           <img class="logo_cpu_in_the_top" src="image_simulator/cpu_icon_introduction.png" alt="">
+          </a>
+           <H4 class="title_cpu_style"> CENTRAL PROCESSING UNIT</H4>
+         </div>
+      
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="introduction.html">INTRODUCTION</a></li>
+              <li><a class="menu__item" href="computer.html">Computer as General purpose machaine</a></li>
+              <li><a class="menu__item" href="computer_calculation.html">Computer perform simple Calculator</a></li>
+              <li><a class="menu__item"  href="the_von_architecture.html">The Von neumann Model </a></li>
+              <li><a class="menu__item" href="fetch_decode_execute.html">The Cpu fetch/Decode/Execute/</a></li>
+              <li><a class="menu__item" href="assembly.html">Assembly and High level Language</a></li>
+              <li><a class="menu__item" href="instruction_set.html"> The CPU Insctruction Set</a> </li>
+              <li><a class="menu__item" href="from_the_high_level_to_machine_language.html"> From The High Level To Machine Language</a> </li>
+              <li><a class="menu__item" href="exercises.html">Exercises</a></li>
+              </ul>
+          </div>
+
+        <div class="page1_text">
+               <h2 style="background-color: white; color: black; border-radius: 5px;">Computers as general purpose machines</h2>
+                <p class="text_page1">
+                   We are all familiar with widely popular “general purpose” 
+                   computers such as desktops, laptops or tablets. Yet, modern
+                   mobile phones or gaming consoles are computers too, and even
+                   disparate devices such as digital cameras, audio players, watches, tv sets,
+                    washing machines, cars,
+                   drones or even modern clothes and shoes, all embed computers which are instrumental
+                  to support their functionalities.
+                </p>
+             <h2>Examples of Computers</h2>
+
+             <!-- FOTO DA Inserire Qua -->
+            <!-- 
+                <div class="container_image1"> 
+                    <div class="box_image"><img src="image_simulator/tesla_for_example_computer.jpg" alt="TESLA" class="image_box"> </div>
+                    <div class="box_image"><img src="image_simulator/playstation_example_computer.jpg" alt="Playstation " class="image_box"> </div>
+                    <div class="box_image"> <img src="image_simulator/macbook_for_example_computer.jpg" alt="Computer" class="image_box"></div> 
+               </div>
+
+               <div class="container_image2">     
+                    <div class="box_image"><img src="image_simulator/drone.jpg" alt="Drone" class="image_box"> </div> 
+                    <div class="box_image"><img src="image_simulator/smartwatch.jpg" alt="Smart Watch" class="image_box"> </div> 
+                    <div class="box_image"> <img src="image_simulator/dishwasher.jpg" alt="Dish Washer" class="image_box"></div> 
+                </div>
+               -->
+               <!-- Begin with slidershow-->
+               
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="image_simulator/tesla_for_example_computer.jpg" style="width:100%">
+    <div class="text">Tesla Electric Car</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="image_simulator/playstation_example_computer.jpg" style="width:100%">
+    <div class="text" >Playstation</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="image_simulator/macbook_for_example_computer.jpg" style="width:100%">
+    <div class="text">Macbook Computer</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="image_simulator/drone.jpg" style="width:100%">
+    <div class="text">Drone</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="image_simulator/smartwatch.jpg" style="width:100%">
+    <div class="text">Smartwatch</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="image_simulator/dishwasher.jpg" style="width:100%">
+    <div class="text" id="text_title">Dishwasher</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>  
+    <span class="dot" onclick="currentSlide(6)"></span>    
+  </div>
+  
+               <!-- End slidershow-->
+               
+              <H2 style="background-color: white; color: black; border-radius: 5px;">Computers common generic architecture</H2>
+                <P class="text_page1">
+                    Despite the huge varieties of computers, every single one of them share a very similar architecture,
+                    and is made out of a physical part (hardware), as well as applications consisting of series of instructions (software).
+                    The main objective of the architecture is to identify the main components and define how they interact with each other. 
+                    At the macroscopic level this generic architecture can be schematized as in the following diagrams:
+                </P>
+
+               
+                   <img  src="image_simulator/architecture_02_alu_memory unit.webp"  alt=""
+                    style="  width: 100%;
+                   max-width: 500px;
+                   height: auto;">
+                   <img src="image_simulator/architecture_01_.webp" alt="">
+             
+                
+
+                <p class="text_page1">
+                 The core component of any computer is the so called Central Processing Unit (CPU). The CPU reads and executes instruction fetched one by one from a primary (or central, or main) memory,
+                 processing the data in input, and producing data in output. The input data could come, for example, from a keyboard or from a sensor detecting the level of oxygen in the blood of a patient.
+                  The output data, for example, could display a picture on a monitor or control the amount of gasoline injected in the engine of a car.
+                 Two key reasons have made it possible to use the same architecture for such a wide variety of contexts: the concept of stored program machine and the digital representation of the information.
+                </p>
+                <h2 style="background-color: white; color: black; border-radius: 5px;">Stored program machines</h2>
+                <p class="text_page1">
+                    Indeed, before the advent of the modern computer, machines able to carry out computations were already available. Yet each machine was custom built for a single, specific purpose. A stored program computer,
+                     on the contrary, is a machine that stores program instructions in memory. By changing the programs in its memory,
+                     the same  machine can perform totally different functions.
+                    Modern memories are electronic, magnetic, or optical devices; in the past, program instructions were stored in plugboards or similar mechanisms.
+                </p>
+                <!--  FOTO DA INSERIRE CON LE DESCRIZIONE SOTTO LE FOTO DA COMPLETARE-->
+                <div class="container_example_image_computer"> 
+
+                        <div class="description_image"> 
+                           <img src="image_simulator/first_computer.webp" alt="The First Computer" class="image_box">
+                           <div class="desc_img_image"> The ENIAC was the first computing system, designed in the early 1940s, based on a primitive 
+                             concept of Stored Program Computer. Here the instructions, or programs, were stored as a combination of paper cards, 
+                             plug-board wirings and mechanical switches.</div>
+                         </div>
+                         <div class="description_image">
+                           <div class="desc_img_image"> An example of modern stored-program machine is the personal computer. In these devices
+                             it is possible to easily install/uninstall and execute different applications,
+                             in order to support the most disparate functions.
+                           </div>
+                           <img src="image_simulator/medical_computer.webp" alt="The medical computer" class="image_box">
+                         </div>
+                         <div class="description_image">
+                           <img src="image_simulator/computer_modern.webp" alt="Computer Modern" class="image_box">
+                           <div class="desc_img_image">“Special purpose computers” are  computers which have fixed, preinstalled programs, hence 
+                             predefined supported functions (e.g. medical appliances, calculators, traffic lights...). Yet, 
+                             they have the same standard architecture as the other type of computers.
+                           </div>
+                         </div>
+                </div>
+                <H2 style="background-color: white; color: black; border-radius: 5px;">Digital (uniform) representation of information</H2>
+                <P class="text_page1">
+                    The second reason that made it possible to use the same architecture in many different contexts and applications, is the possibility to represent and process different types 
+                    of information, not only numbers, but also text, audio, 
+                    images, videos…, uniformly as digits, as discussed in the next session.
+                </P>
+                <!--  FOTO DA INSERIRE CON LE DESCRIZIONE SOTTO LE FOTO DA COMPLETARE-->
+                 <div class="bin_code_example">
+                     <div class="bin_code"><div class="bin_code_1"> <img src="image_simulator/code_bin1.png" alt=""> <p>  
+
+                      In a computer, a sequence of binary digits can represent a sequence of characters. For instance, the above code may represent the word "Cat".
+                      
+                      ​</p>
+                     </div></div>
+                     <div class="bin_code"><div class="bin_code_2"> <img src="image_simulator/code_bin2.png" alt=""> <p>The same sequence may also represents the 3 numbers "67, 97, 116", or "4.415.860" if considered as a single 24-bit number.</p></div></div>
+                     <div class="bin_code"><div class="bin_code_3"> <img src="image_simulator/code_bin3.png" alt=""><p>In a different context, the same sequence again may represent the above dark shade of blue. Indeed, by considering <br> 67, 97 and 116 as the levels of red, green and blue intensity, these digits represent a color.</p></div></div>
+                     
+                 </div>
+            
+        </div>
+
+         <!--    THE TWOO ARROW BUTTON  ON THE BOTTOM OF THE PAGE  -->
+        <div class="arrow ">
+         <a href="introduction.html">
+            <div class="arrow_right">
+              <img class="arrow" src="image_simulator/arrow_droite.png" alt="">
+            </div>
+          </a>
+          <a href="computer_calculation.html">
+          <div class="arrow_left">
+              <img class="arrow" src="image_simulator/arrow_gauche.png" alt="">
+          </div>
+           </a>    
+        </div>
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+          
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer perform simple calculation</title>
+    <link rel="stylesheet" href="introduction.css">
+</head>
+<body>
+    <div class="plove">
+        <a href="index.html">
+          <img class="logo_cpu_in_the_top" src="image_simulator/cpu_icon_introduction.png" alt="">
+         </a>
+         <H4 class="title_cpu_style"> CENTRAL PROCESSING UNIT</H4>
+     </div>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="introduction.html">INTRODUCTION</a></li>
+          <li><a class="menu__item" href="computer.html">Computer as General purpose machaine</a></li>
+          <li><a class="menu__item" href="computer_calculation.html">Computer perform simple Calculator</a></li>
+          <li><a class="menu__item"  href="the_von_architecture.html">The Von neumann Model </a></li>
+          <li><a class="menu__item" href="fetch_decode_execute.html">The Cpu fetch/Decode/Execute/</a></li>
+          <li><a class="menu__item" href="assembly.html">Assembly and High level Language</a></li>
+          <li><a class="menu__item" href="instruction_set.html"> The CPU Insctruction Set</a> </li>
+          <li><a class="menu__item" href="from_the_high_level_to_machine_language.html"> From The High Level To Machine Language</a> </li>
+          <li><a class="menu__item" href="exercises.html">Exercises</a></li>
+          </ul>
+      </div>
+    <div class="title_page">
+        <h2 style="background-color: white; color: black; border-radius: 5px;">Computer Perform Simple calculation</h2>
+    </div>
+    <div  class="page1_text">
+      <p class="text_page1">
+        As said before, computers do not represent and process information using numbers, 
+       text, images or sounds as we do. Instead, they represent everything using just two symbols: <span style="font-weight: bold;"> 1 </span>and<span style="font-weight: bold;"> 0 </span>.
+       For example, pairs of binary digits are added according to the rules: <br>
+       <span class="number_blu">0</span> + <span class="number_blu">0</span> = <span class="number_blu">0</span> <br>
+
+       <span class="number_blu">0</span> + <span class="number_green">1</span> =  <span class="number_green">1</span> <br>
+
+       <span class="number_green">1</span> + <span class="number_green">1</span> = <span class="number_green">1</span><span class="number_blu">0</span>, <br> 
+            (one - zero, not ten) which means <span class="number_blu">0</span> with <span class="number_green"> carry 1</span> .
+      The sequence <span class="number_green">1</span><span class="number_blu">0</span> <span style="font-weight: bold;">as a binary number</span> , that is using only 2 symbols, is the equivalent of 2 as a decimal number.
+      </p>
+      <h3>Binary digits can represent text, images, video, audio, instructions</h3> 
+      <p class="text_page1">
+          But how can different types of information such as text, images, sounds or even computer instructions be represented, using just the two symbols 1 and 0?
+          Starting from the numbers, and soon the alphabet, different coding conventions have been designed. <br> Here are some examples of binary representations of different media:
+      </p>
+      <div class="first_table"> 
+         <div class="text_table"> 
+            <p> 
+              <h4 class="title_desc_paraf"> Text </h4> 
+               can be represented in a computer by a sequence of binary codes, with each code representing a letter or a punctuation mark.
+               Older computing machinery used the so called ASCII code, which allocates seven bits for each symbol in latin-based alphabets. Because nowadays computers work with 8-bit groups of 1s and 0s (bytes),
+               rather than with 7-bit groups, ASCII codes are often extended by one bit to 8 bits.
+               A more flexible solution is Unicode, which makes use of 16 or even 32 bits, permitting a huge number of different characters (including, for example, Chinese or Japanese) to be coded.
+            </p>
+            </div>
+              <div class="table">
+                <table>
+                  <tr>
+                    <th>Binary</th>
+                    <th>Char</th>
+                    <th>Binary</th>
+                    <th>Char</th>
+                  </tr>
+                  <tr>
+                    <td>0100 0001</td>
+                    <td>A</td>
+                    <td>0110 0001</td>
+                    <td>a</td>
+                   
+                  </tr>
+                  <tr>
+                     <td>0100 0010</td>
+                     <td>B</td>
+                     <td>0110 0010</td>
+                      <td>b</td>
+                    
+                  </tr>
+                  <tr>
+                      <td>0100 0011</td>
+                      <td>C</td>
+                      <td>0110 0011</td>
+                      <td>c</td>
+                  
+                  </tr>
+                  <tr>
+                     <td>0100 0100</td>
+                     <td>D</td>
+                     <td>0110 0100</td>
+                     <td>d</td>
+                    
+                </tr>
+                </table>
+             
+         
+            </div>
+          </div>
+          <hr style="height:2px; background-color:grey;">
+            <!--  image in Rbg with explication -->
+             <div class="section_image_rgb1" style="display: flex;">
+
+                <div class="image_rbg">
+                  <img src="image_simulator/rbg_color_model.jpg" alt=""   
+                  width: 100%;
+                  max-width: 300px;
+                  height: auto;>
+                  <span class="small_desc" id="small_desc_rbg">Using the RGB color model, <br> the color of this pixel is represented as <br> "37, 154, 170" in decimal,<br> or <span class="number_green">10011010</span>, <span class="number_green">10011010</span>,
+                  <span class="number_green">10101010</span> in binary.</span>
+               </div>
+               <div class="text_image_rbg">
+                   <p class="text_rbg">
+                     <h4 class="title_desc_paraf">Images and videos</h4>
+                      In 1886, impressionist painters developed a technique called Pointillism
+                      in which small, distinct dots of color were applied in patterns to form 
+                      an image. Just by switching from dots to little tiny squares (<span style="font-weight: bold;">pixels</span>),
+                     we can easily understand how an image can be digitally represented. <br>
+                
+                      In color imaging systems, the color of a pixel is typically represented by 
+                     three or four numbers coding component intensities such as red, green, and blue, 
+                      or cyan, magenta, yellow, and black. <br>
+                      A series of still images (hence set of numbers) visualized at sufficiently short time intervals,
+                     is perceived by our visual system as moving images. 
+                   </p>
+                </div>
+            </div>
+            <!-- final section RBG-->
+             <hr style="height:2px; background-color:grey;">
+             
+            <!--  Begin section Audio-->
+            <div class="section_audio">
+                    <div  class="text_audio">
+                         <p class="paraf_audio">
+                            <h4 class="title_desc_paraf">  Audio </h4>
+                            Sound, such as speech or music, is an analogue physical quantity, corresponding for example to
+                             variations in air pressure. But also this type of information can be converted to a digital form.
+                              To obtain a digital representation of a sound, samples of its intensity are taken at a sufficient speed (sampling rate),
+                              and the value of each <span style="font-weight: bold;">sample is quantised to the nearest binary code</span>.
+                            It is important to appreciate that sounds such as speech or music varies rapidly with time, and so its samples will have to be taken at sufficiently
+                             closely spaced intervals, if the digital representation is to be faithful to the original.
+                         </p>
+                    </div>
+                    <div class="image_audio">
+                          <img src="image_simulator/quantization.png" alt="">
+                    </div>
+
+
+            </div>
+            <hr style="height:2px; background-color:grey;">
+            <!-- end of section audio-->
+            <hr style="height:2px; background-color:grey;">
+            <!-- Begin section Instruction-->
+            <div class="section_instruction">
+               
+
+                   <div class="table">
+                       <table>
+                           <th class="head_table">Binary Code </th>
+                           <th>Description</th>
+                           <tr>
+                               <td>00000000 |<span class="red_number">00001000</span></td>
+                               <td>Add content of memory cell number 8 into the Accumulator</td>
+                           </tr>
+                           <tr>
+                               <td>00000101 |<span class="red_number">00000100</span></td>
+                               <td>Store the value of the Accumulator into Memory Location X</td>
+                           </tr>
+                           <tr>
+                               <td>00001100 |<span class="red_number">00000111</span></td>
+                               <td>Unconditional jump to the instruction at location P</td>
+                           </tr>
+                       </table>
+                        <span class="small_desc"> A few of code ASCII</span>
+                   </div>
+                   <div class="text_instruction">
+                    <p class="paraf_instruction">
+                        <h4 class="title_desc_paraf"> Instruction</h4>
+                       In order to execute programs or process data, computers must follow some specific instructions. 
+                        As discussed in the <a href="instruction_set.html">"CPU instruction set"</a>  section, there are many basic operations that a machine can perform.​ Each one is composed
+                       of an <span class="number_blu">opcode</span> (the instruction executed by the CPU) and one or more <span class="number_green">operands</span>  (the data or memory locations the instruction operates on).
+                       Since binary code is the only language that a computer can understand, these instruction are represented, again, as binary digits.
+                    </p>
+                  </div>
+            </div>
+            <hr style="height:2px; background-color:grey;">
+            <!-- End Section Instruction-->
+            <div class="section_digital_calculation">
+                       <div class="text_digital_calculation">
+                           <h4 class="title_desc_paraf">Multimedia information can be processed with "elementary" digital calculations</h4>
+                             <p class="paraf_digital_calculation">
+                                Since any multimedia information looks just like binary numbers to the computer, 
+                                it should be clear by now that <span style="font-weight: bold;"> whichever processing of these data involves digital calculations</span>. 
+                                Here are some examples: <br>
+                             </p>
+                             <li> The volume of a sound represents the intensity of air pressure variations. Hence, increasing 
+                                 the volume of a song involves a simple multiplication of the value of each sound sample by a 
+                                 factor greater than 1.
+                            </li>
+                            <li>
+                                The contrast of an image can be explained as the difference between maximum and minimum pixels colour intensity.
+                                 Hence, to change the contrast of an image it is sufficient to modify the value of these intensities,
+                                 increasing the difference between maximum and minimum values, following a simple formula.
+                            </li>
+                            <li>      
+                              The simplest way to increase the size of an image is replacing every pixel with a number of pixels of the same color. The resulting image is 
+                              larger than the original and preserves all the original detail.
+                            </li>
+                            <li>
+                                To compress a video it is possible, for example,  to reduce the level of detail of the composing frames. This can be achieved, for example,
+                                 by computing the average color of a group of pixels of different colors, and by replacing them with a single repeated pixel having that averaged color. 
+                            </li>
+                            <div class="image_digital_calculation">
+                                  <img src="image_simulator/increasing_volume_sound.jpg" alt="">
+                            </div>
+                       </div>
+            </div>
+    </div>
+      <!--    THE TWOO ARROW BUTTON  ON THE BOTTOM OF THE PAGE  -->
+      <div class="arrow ">
+        <a href="computer.html">
+           <div class="arrow_right">
+             <img class="arrow" src="image_simulator/arrow_droite.png" alt="">
+           </div>
+         </a>
+         <a href="the_von_architecture.html">
+         <div class="arrow_left">
+             <img class="arrow" src="image_simulator/arrow_gauche.png" alt="">
+         </div>
+          </a>    
+       </div>
+</body>
+</html>

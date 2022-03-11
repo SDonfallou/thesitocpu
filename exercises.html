@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="introduction.css">
+</head>
+<body>
+    <div class="plove">
+        <a href="index.html">
+          <img class="logo_cpu_in_the_top" src="image_simulator/cpu_icon_introduction.png" alt="">
+        </a>
+        <H4 class="title_cpu_style"> CENTRAL PROCESSING UNIT</H4>
+</div>
+
+  <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+         <label class="menu__btn" for="menu__toggle">
+             <span></span>
+       </label>
+
+<ul class="menu__box">
+  <li><a class="menu__item" href="introduction.html">INTRODUCTION</a></li>
+  <li><a class="menu__item" href="computer.html">Computer as General purpose machaine</a></li>
+  <li><a class="menu__item" href="computer_calculation.html">Computer perform simple Calculator</a></li>
+  <li><a class="menu__item"  href="the_von_architecture.html">The Von neumann Model </a></li>
+  <li><a class="menu__item" href="fetch_decode_execute.html">The Cpu fetch/Decode/Execute/</a></li>
+  <li><a class="menu__item" href="assembly.html">Assembly and High level Language</a></li>
+  <li><a class="menu__item" href="instruction_set.html"> The CPU Insctruction Set</a> </li>
+  <li><a class="menu__item" href="from_the_high_level_to_machine_language.html"> From The High Level To Machine Language</a> </li>
+  <li><a class="menu__item" href="exercises.html">Exercises</a></li>
+  </ul>
+</div>
+<div class="title_page">
+    <h1> Exercises</h1>
+</div> 
+ <div class="page1_text">
+   <p class="justify_alignement_exercices" id="titleparaf_exercises">
+    The aim of the following two exercises is to code in assembler the pseudo-coded algorithms on the left. <br>
+     Organize the corresponding assembler instructions on the right in the correct order, by dragging them around.
+   </p>
+     <h4>  Perform the following tasks:</h4>
+     <p class="justify_alignement_exercices">
+
+        <ol class="justify_alignement_exercices">
+            <li> Describe the difference between numeric and direct addressing. </li>
+            <li> Describe the data transmitted on the data, address and control buses,<br> 
+                respectively, during the execution of the instructions LOD #5, and LOD 5. </li>
+            <li> Identify the binary code of the assembler instruction MUL 5.  </li>
+            <li>Identify the mnemonic instruction corresponding to the machine language instruction 00010011. <br></li>
+      </ol> 
+       
+        </p>
+
+        <h4> Develop suitable programs in assembly code, to solve the following problems:</h4>
+        <p class="justify_alignement_exercices">
+
+            <ol class="justify_alignement_exercices">
+                <li> 
+                    Perform the addition, subtraction, multiplication and division of 2 numbers;<br> if the operation is 
+                    not commutative and the first number is smaller than the second one, reverse them. 
+                    <div id="button">
+                        <a href="#dialog"> 
+                         <button class="button">Answer</button>
+                          
+                        </a>
+                        <dialog id="dialog">
+                            <img src="image_simulator/solution_1.png" alt="">
+                            <a href="#!" style="
+                                color: black;
+                                font-weight: 900;
+                                background: red;
+                                text-decoration-line: underline;
+                            ">Close</a>
+                          </dialog>
+                       
+                       </div>
+                </li>
+                <li>Calculate the mean of 3 numbers.  
+                    <div id="button">
+                        <a href="#dialog"> 
+                         <button class="button">Answer</button>
+                          
+                        </a>
+                        <dialog id="dialog">
+                            <img src="image_simulator/solution_2.png" alt="">
+                            <a href="#!" style="
+                            color: black;
+                            font-weight: 900;
+                            background: red;
+                            text-decoration-line: underline;">Close</a>
+                          </dialog>
+                       
+                       </div>
+                     </li>
+                <li>Find the maximum and the minimum of 2 numbers.
+                   
+                    <div id="button">
+                        <a href="#dialog"> 
+                        <button class="button">Answer</button>
+                          
+                        </a>
+                        <dialog id="dialog">
+                            <img src="image_simulator/solution_3.jpg" alt="">
+                            <a href="#!" style="
+                                        color: black;
+                                        font-weight: 900;
+                                        background: red;
+                                        text-decoration-line: underline;
+                            ">Close</a>
+                          </dialog>
+                       
+                       </div>
+                </li>
+                <li>Determine the parity (even or odd) of a number:
+                    <div id="button">
+                        <a href="#dialog"> 
+                            <button class="button">Answer</button>
+                          
+                        </a>
+                        <dialog id="dialog">
+                            <img src="image_simulator/solution_4.png" alt="">
+                            <a href="#!" style="
+                                  color: black;
+                                  font-weight: 900;
+                                  background: red;
+                                  text-decoration-line: underline;
+                            ">Close</a>
+                          </dialog>
+                       
+                       </div>
+                </li>
+                <li> Determine how many bits are set (i.e. have value “1”) in a given byte. 
+                    Example: 87 = 0101 0111 -> 5 <br>
+             
+                </li>
+                    
+                <li>Hint: check the last bit, shift right the original number, repeat. </li>
+                <li> Determine whether a given positive integer number satisfies the Collatz conjecture 
+                    (see the definition at <a href="https://en.wikipedia.org/wiki/Collatz_conjecture)">https://en.wikipedia.org/wiki/Collatz_conjecture)</a> ,
+                     computing the number of iterations necessary to reach the number 1. <br>
+                </li>
+                <li>Sum the numbers from 1 to 5. <br></li>
+                <li>Calculate the factorial of a number. <br></li>
+                <li> Compute the result of the expression: Y= 3*X + 5, where X and Y are labels corresponding to memory addresses.
+                </li>
+                <li>Compute the sum of the numbers from X to Y included, where X and Y are labels corresponding to memory adresses.
+                </li>
+                <li>Compute the Greatest Common Divisor problem, using the "Euclid's Method". <br></li>
+                <li> Translate the following pseudo-code to assembler: <br>
+                    COUNT:=0; K:=5; <br>
+      
+                     DO <br>
+      
+                    K:=K+37; <br>
+      
+                   COUNT:=COUNT+1; <br>
+      
+                    WHILE K < COUNT  <br>
+                </li>
+                <li>
+                    Translate the following pattern in pseudo-code to assembler: <br>
+
+                    FOR I:= 5 DOWNTO 0 DO { <br>
+       
+                    // Body code here 
+       
+                    }
+       
+                     // Additional code here 
+                      <br>
+                </li>
+                <li> Translate the following pattern in pseudo-code to assembler: <br></li>
+                <li>
+                    IF < boolean expression> <br>
+
+                    THEN <  statements> <br>
+     
+                   ENDIF <br>
+     
+                  < other statements> <br>
+     
+                    15) Translate the following pattern in pseudo-code to assembler: <br>
+     
+      
+     
+                    IF W < X <br>
+     
+                    THEN <br>
+     
+                     exchange W and X <br>
+     
+                     ENDIF  <br>
+                </li>
+
+            </ol>
+            
+
+            
+        </p>
+ </div>
+ <div class="arrow ">
+    <a href="from_the_high_level_to_machine_language.html">
+       <div class="arrow_right">
+         <img class="arrow" src="image_simulator/arrow_droite.png" alt="">
+       </div>
+     </a>
+     </div>
+</body>
+</html>

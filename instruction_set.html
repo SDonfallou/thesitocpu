@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="introduction.css">
+</head>
+<body>
+    <div class="plove">
+        <a href="index.html">
+          <img class="logo_cpu_in_the_top" src="image_simulator/cpu_icon_introduction.png" alt="">
+        </a>
+        <H4 class="title_cpu_style"> CENTRAL PROCESSING UNIT</H4>
+     </div>
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="introduction.html">INTRODUCTION</a></li>
+          <li><a class="menu__item" href="computer.html">Computer as General purpose machaine</a></li>
+          <li><a class="menu__item" href="computer_calculation.html">Computer perform simple Calculator</a></li>
+          <li><a class="menu__item"  href="the_von_architecture.html">The Von neumann Model </a></li>
+          <li><a class="menu__item" href="fetch_decode_execute.html">The Cpu fetch/Decode/Execute/</a></li>
+          <li><a class="menu__item" href="assembly.html">Assembly and High level Language</a></li>
+          <li><a class="menu__item" href="instruction_set.html"> The CPU Insctruction Set</a> </li>
+          <li><a class="menu__item" href="from_the_high_level_to_machine_language.html"> From The High Level To Machine Language</a> </li>
+          <li><a class="menu__item" href="exercises.html">Exercises</a></li>
+          </ul>
+      </div>
+      <div class="title_page">
+          <h1 style="background-color: white; color: black; border-radius: 5px;">The CPU Instruction Set </h1>
+      </div>
+      <div class="page1_text">
+            <p class="text_cpu_instruction_cpu">
+                The instruction set of a given CPU, also called Instruction Set Architecture (ISA), 
+                is the  collection of instructions which that specific CPU can recognize and execute.
+                Each instruction is a command to instruct the CPU to perform a certain elementary operation.
+                It can be specified as Machine code (Binary/Hex) or Assembly code (Mnemonic equivalent of 
+                binary instructions). <br>
+                Here are some examples from the simulator: <br>
+                
+            </p>
+
+   
+           
+         <table class="table_table" >
+             <tr>
+               <th class="color_title_table">Binary</th>
+               <th class="color_title_table">Mnemonic code</th>
+               <th class="color_title_table">Description</th>
+             </tr>
+              <tr>
+                <td>00000000 | 00001000</td>
+                <td>ADD 8</td>
+                <td>Add content of memory cell number 8 into the Accumulator</td>
+                
+              </tr>
+               <tr>
+                  <td>00010000 | 00001000</td>
+                  <td>ADD #8</td>
+                  <td>Add number 8 into the Accumulator</td>
+                  
+               </tr>
+               <tr>
+                 <td>00000000 | 00001000</td>
+                 <td>ADD Y </td>
+                 <td>Add content of memory cell tagged as Y into the Accumulator</td>
+               </tr>
+                
+           </table>
+           <P class="operation_code">
+               The digits or text in blue represent the Operation Code (opcode):
+                a binary number which represents the operation to perform. 
+                A binary number is naturally interpreted by a CPU, yet it is difficult to remember for a human.
+                Hence, programmers can use its mnemonic (assembly) equivalent code to identify the desired operation,
+               such as "LOD", "ADD", and "STO". <br>
+               The digits or text in red represent the operand(s) of the instruction. 
+               The operand has different interpretations according to the so-called addressing mode 
+              (which is also specified in the opcode). In the case of the simulator, the available addressing modes are: <br>
+           </P>
+           <ul>
+               <li>
+                Immediate (or numeric) addressing, as in ADD #8:  in this case the operand is a number (add the number 8)
+               </li>
+               <li>
+                Direct addressing, as in ADD 8: in this case the operand represents a memory address
+                (add the number stored at the memory address 8). Rather than using directly numeric memory addresses,
+                 it is more convenient for humans to associate them with meaningful labels, such as Y or COUNTER.
+                Hence a memory address can be more easily identified by a label, as in ADD Y. Of course,
+                 these labels are translated to the corresponding numerical addresses by the assembler.
+               </li>
+           </ul>
+           <div class="image_operation_code"> 
+               <img class="image_simulator_in_gif" src="image_simulator/operation_code.gif" alt="">
+               <span style="display: block;">  
+                     Try it yourself: run the simulator and write some instructions. <br>
+                     You can swap from Mnemonic (Assembly) to Binary code just by clicking the Symbolic/Binary button.
+               </span>
+           </div>
+           <div class="table_instruction_cpu">
+               <span>
+                The instructions supported by a CPU can be organized in a few fundamental categories. The most important ones are:
+               </span>
+               <ul> 
+                   <li> <span class="margin_set" >STEP 1 <br></span> 
+                       Data flow operations: instructions used to  transfer (store) the contents of a CPU register, 
+                       or the result of a computation to the primary memory, or to transfer (load) data stored
+                       in the primary memory to the CPU, in order to perform a computation on it later.
+                   </li>
+                   <li> <span class="margin_set">STEP 2<br></span> 
+                       Control flow operations: instructions that modify the order in which individual instructions are executed
+                      (instruction are otherwise executed in sequential order, one after the other).
+                    </li>
+                    <li> <span class="margin_set">  STEP 3 <br></span>
+                        Arithmetic-logic operations: instructions that perform arithmetic (addition, subtraction...) and logic operations (and, not...).
+                    </li>
+               </ul>
+           </div>
+          <p class="description_instruction"> 
+             The following table reports the full set of instructions supported by the simulator, organized according to the above mentioned categories. 
+             For each instruction are reported: the opcode binary code in machine language, its assembly (mnemonic) equivalent, and a short informal description.
+          </p>
+          <table class="table_table" >
+            <tr class="color_title_table">
+             <caption>Data Flow</caption>
+            </tr>
+             <tr>
+               <td>LOD X <br> 00000100</td>
+               <td>LOD #X <br> 00010100</td>
+               <td>Load content of Memory Location X (or number #X) into the Accumulator.</td>
+               
+             </tr>
+              <tr>
+                 <td>STO Y</td>
+                 <td>00000101</td>
+                 <td>Store the value of the Accumulator into Memory Location Y.</td>
+                 
+              </tr>
+              </table>
+              <table class="table_table" >
+              <tr class="color_title_table">
+                  <caption>Control Flow</caption>
+              </tr>
+              <tr>
+                <td>JMP P</td>
+                <td>00001100 </td>
+                <td>Unconditional jump to the instruction at location P.</td>
+            </tr>
+            <tr>
+                <td>JZ P</td>
+                <td>00001101</td>
+                <td>Jump on zero: if Flag Z is set, go to instruction number P,
+                     otherwise go to the next instruction.
+                 </td> 
+            </tr>
+            <tr>
+                <td>JNZ P </td>
+                <td>00001011</td>
+                <td>Jump on Not Zero: if Flag Z is cleared, go to instruction number P,
+                     otherwise, go to the next <br> instruction.
+                </td>
+            </tr>
+            <tr>
+                <td>JN P</td>
+                <td>00000110</td>
+                <td>Jump on Negative: if Flag N is set, go to instruction number P,
+                     otherwise go to the next instruction.
+                </td>
+            </tr>
+            <tr>
+                <td>JNN P </td>
+                <td>00000111</td>
+                <td>Jump on Not Negative: if Flag N is cleared, go to instruction number P,
+                     otherwise go to the next <br> instruction.   
+                </td>
+            </tr>
+            <tr>
+                <td>NOP</td>
+                <td>00001110</td>
+                <td>No operation, go to next instruction.</td>
+            </tr>
+            <tr>
+                <td>HLT</td>
+                <td>00001111</td>
+                <td>Halt execution</td>
+            </tr>
+            </table>
+            <table class="table_table" >
+               <tr class="color_title_table">
+               
+                 <caption>Arithmetic-logic</caption>
+               </tr>
+               <tr>
+                   <td>ADD X <br> 00000000</td>
+                   <td>ADD #X <br> 00010000</td>
+                   <td>Add content of Memory Location X (or number #X) to the Accumulator. Flags are updated.</td>
+               </tr>
+               <tr>
+                   <td>SUB X <br> 00000001</td>
+                   <td>SUB #X <br> 00010001</td>
+                   <td>Subtract content of Memory Location X (or number #X) from the Accumulator. <br> Flags are updated.</td>
+               </tr>
+               <tr>
+                   <td>MUL X <br> 00000010</td>
+                   <td>MUL #X <br> 00010010</td>
+                   <td>Multiply the Accumulator by the content of Memory Location X (or number #X). <br> Flags are updated.</td>
+               </tr>
+               <tr>
+                   <td>DIV X <br> 00000011</td>
+                   <td>DIV #X <br> 00010011</td>
+                   <td>Divide the Accumulator by the content of Memory Location X (or number #X). <br> Flags are updated.</td>
+               </tr>
+               <tr>
+                   <td>AND X <br> 00001000</td>
+                   <td>AND #X <br> 00011000</td>
+                   <td>Bitwise AND between the Accumulator and the content of Memory Location X (or number #X). <br> Flags are updated.</td>
+               </tr>
+               <tr>
+                   <td>NOT X <br> 00001001</td>
+                   <td>NOT #X <br> 00011001</td>
+                   <td>Bitwise NOT of the content of Memory Location X (or number #X). The result is stored in <br> the Accumulator.</td>
+               </tr>
+               <tr>
+                   <td>CMP X <br> 00001010</td>
+                   <td>CMP #X <br> 00011010</td>
+                   <td>Subtract content of Memory Location X (or number #X) from the Accumulator. <br>  Flags are updated, but the content of the Accumulator is not modified.</td>
+               </tr>
+          </table>
+    </div> 
+           <!--    THE TWOO ARROW BUTTON  ON THE BOTTOM OF THE PAGE  -->
+        <div class="arrow ">
+            <a href="assembly.html">
+               <div class="arrow_right">
+                 <img class="arrow" src="image_simulator/arrow_droite.png" alt="">
+               </div>
+             </a>
+             <a href="from_the_high_level_to_machine_language.html">
+             <div class="arrow_left">
+                 <img class="arrow" src="image_simulator/arrow_gauche.png" alt="">
+             </div>
+              </a>    
+           </div>
+</body>
+</html>

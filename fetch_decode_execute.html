@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="introduction.css">
+</head>
+<body>
+
+    <div class="plove">
+        <a href="index.html">
+          <img class="logo_cpu_in_the_top" src="image_simulator/cpu_icon_introduction.png" alt="">
+        </a>
+        <H4 class="title_cpu_style"> CENTRAL PROCESSING UNIT</H4>
+     </div>
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="introduction.html">INTRODUCTION</a></li>
+          <li><a class="menu__item" href="computer.html">Computer as General purpose machaine</a></li>
+          <li><a class="menu__item" href="computer_calculation.html">Computer perform simple Calculator</a></li>
+          <li><a class="menu__item"  href="the_von_architecture.html">The Von neumann Model </a></li>
+          <li><a class="menu__item" href="fetch_decode_execute.html">The Cpu fetch/Decode/Execute/</a></li>
+          <li><a class="menu__item" href="assembly.html">Assembly and High level Language</a></li>
+          <li><a class="menu__item" href="instruction_set.html"> The CPU Insctruction Set</a> </li>
+          <li><a class="menu__item" href="from_the_high_level_to_machine_language.html"> From The High Level To Machine Language</a> </li>
+          <li><a class="menu__item" href="exercises.html">Exercises</a></li>
+          </ul>
+      </div>
+         <div class="title_page">
+             <h2 style="background-color: white; color: black; border-radius: 5px;">The CPU Fetch/Decode/Execute cycle</h2>
+         </div>
+      <div class="page1_text">
+               <div class="fetch_decode_execute">
+                   <p class="paraf_f_d_e">
+                    ​The CPU continuously repeats a  fetch-decode-execute cycle , in order to execute the instructions in a program, one by one.
+                    In this cycle, the CPU goes through three main stages:
+                   </p>
+
+               </div>  
+                   <div class="image_fetch_decode_execute">
+                         <img  src="image_simulator/FetchDecodeExecute.png" alt="">
+                   </div>
+                   <div class="the_step">
+                       <ol id="list_step">
+                          <li> Fetches a program instruction from the main memory; </li>
+                          <li> Decodes the instruction, i.e. it works out what needs to be done;</li>
+                          <li>Executes ( i.e. carries out) the instruction.</li>
+                       </ol>
+                       <p class="paraf_fetch"> 
+                           During the fetch stage of the cycle, the content of the memory cell addressed
+                            by the program counter is retrieved and placed into the Instruction Register (IR).
+                       </p>
+                   </div>
+                   <div class="fetch">
+                       <img class="image_simulator_in_gif" src="image_simulator/fetch.gif" alt="">
+                   </div>
+                   <div class="decode_step">
+                        <p class="paraf_decode">    
+                         In the decode part of the cycle, the Control Unit works out what needs to be done by the instruction,
+                         and sends control signals to coordinate the other components.
+                        </p>
+                        <img class="image_simulator_in_gif" src="image_simulator/decode.gif" alt="">
+                   </div>
+                   <div class="execute">
+                      <p class="paraf_execute">  
+                          During the execute stage of the cycle, the instruction is executed, using the ALU if necessary. Sometimes, this stage may
+                           involve the loading or saving of data from and to the main memory.
+                      </p>
+                      <img class="image_simulator_in_gif" src="image_simulator/execute.gif" alt="">
+                   </div>
+                   <div class="increasing">
+                        <p class=paraf_increasing">
+                          Then, the content of the PC is increased to point to the next instruction to be executed and a new fetch cycle starts again.
+                        </p>
+                        <img class="image_simulator_in_gif" src="image_simulator/increasing.gif" alt="">
+                   </div>
+
+      </div>
+      <!--    THE TWOO ARROW BUTTON  ON THE BOTTOM OF THE PAGE  -->
+      <div class="arrow ">
+        <a href="the_von_architecture.html">
+           <div class="arrow_right">
+             <img class="arrow" src="image_simulator/arrow_droite.png" alt="">
+           </div>
+         </a>
+         <a href="assembly.html">
+         <div class="arrow_left">
+             <img class="arrow" src="image_simulator/arrow_gauche.png" alt="">
+         </div>
+          </a>    
+       </div>
+</body>
+</html>
